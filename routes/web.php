@@ -15,3 +15,9 @@ Route::resource('book', 'BookController');
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('menu', function () {
+    return view('menu');
+});
+Route::get('response', 'ResponseController@index');
+Route::post('response', 'ResponseController@index');
+Route::resource('rest', 'RestController');
