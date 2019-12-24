@@ -19,6 +19,8 @@ class VerifyCsrfToken extends Middleware
      * @var array
      */
     protected $except = [
-        //
+        //以下のアドレスはCSRFチェックの対象外（APIなど外部から呼ばれる場合に設定）
+        "rest*",
+        "response"
     ];
 }

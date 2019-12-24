@@ -17,10 +17,12 @@ class RestController extends Controller
         //GET /rest/create
         return 'これはcreateです';
     }
-    public function store()
+    public function store(Request $request)
     {
         //POST /rest
         return 'これはPostです';
+        $aaa =  $request->all();
+        return $request;
     }
     public function show($id)
     {
